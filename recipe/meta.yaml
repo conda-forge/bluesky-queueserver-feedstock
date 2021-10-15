@@ -11,7 +11,7 @@ source:
   sha256: f43d9d729d501b96e3a4bb2a4ebaf9edf63ce7ba2fe9b15668fabf7d43d2a7ef
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<37]
   entry_points:
     - qserver = bluesky_queueserver.manager.qserver_cli:qserver
@@ -58,6 +58,7 @@ test:
     - qserver-list-plans-devices --help
     - qserver-zmq-keys --help
     - qserver-console-monitor --help
+    - python -c "import os; import bluesky_queueserver; assert os.path.isdir(os.path.join(os.path.dirname(bluesky_queueserver.__file__), 'profile_collection_sim'))"
   requires:
     - pip
 
