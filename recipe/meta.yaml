@@ -1,5 +1,5 @@
 {% set name = "bluesky-queueserver" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bluesky-queueserver-{{ version }}.tar.gz
-  sha256: f43d9d729d501b96e3a4bb2a4ebaf9edf63ce7ba2fe9b15668fabf7d43d2a7ef
+  sha256: a70a5e3d911750403c9230d68ae0e21e6659471701ac18c8ea9f7f61f86bfe86
 
 build:
   number: 0
@@ -58,6 +58,7 @@ test:
     - qserver-list-plans-devices --help
     - qserver-zmq-keys --help
     - qserver-console-monitor --help
+    - python -c "import os; import bluesky_queueserver; assert os.path.isdir(os.path.join(os.path.dirname(bluesky_queueserver.__file__), 'profile_collection_sim'))"
   requires:
     - pip
 
