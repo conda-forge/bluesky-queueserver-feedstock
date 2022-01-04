@@ -1,5 +1,5 @@
 {% set name = "bluesky-queueserver" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bluesky-queueserver-{{ version }}.tar.gz
-  sha256: a70a5e3d911750403c9230d68ae0e21e6659471701ac18c8ea9f7f61f86bfe86
+  sha256: 34c546a660e2434117df573afc774bd4344811d1cd2c1013b2bd0bc529c91958
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - pip
     - python
   run:
-    - aioredis <2.0.0
+    - aioredis
     - bluesky
     - bluesky-kafka  # [not win]
     - databroker
