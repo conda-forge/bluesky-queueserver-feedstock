@@ -1,5 +1,5 @@
 {% set name = "bluesky-queueserver" %}
-{% set version = "0.0.9" %}
+{% set version = "0.0.10" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bluesky-queueserver-{{ version }}.tar.gz
-  sha256: 34c546a660e2434117df573afc774bd4344811d1cd2c1013b2bd0bc529c91958
+  sha256: 65a0f15995ee18237928f738c0aafd1aa7246c1fe26674f640d92bcbe412f29d
 
 build:
   number: 0
