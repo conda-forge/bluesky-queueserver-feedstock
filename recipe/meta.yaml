@@ -11,7 +11,7 @@ source:
   sha256: d5be420d7dcc15a410c5d45fe786da832e6c0fbaba5e517783510d37fd607f66
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<37]
   entry_points:
     - qserver = bluesky_queueserver.manager.qserver_cli:qserver
