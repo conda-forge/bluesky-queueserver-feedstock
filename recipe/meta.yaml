@@ -11,8 +11,8 @@ source:
   sha256: d5be420d7dcc15a410c5d45fe786da832e6c0fbaba5e517783510d37fd607f66
 
 build:
-  number: 0
-  skip: true  # [py<37]
+  number: 2
+  noarch: python
   entry_points:
     - qserver = bluesky_queueserver.manager.qserver_cli:qserver
     - start-re-manager = bluesky_queueserver.manager.start_manager:start_manager
@@ -24,11 +24,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.8
   run:
     - aioredis
     - bluesky
-    - bluesky-kafka  # [not win]
+    - bluesky-kafka
     - databroker
     - event-model
     - json-rpc
@@ -40,13 +40,12 @@ requirements:
     - openpyxl
     - ophyd
     - pydantic
-    - python
+    - python >=3.8
     - python-multipart
     - pyyaml
     - pyzmq
     - requests
     - scikit-image
-    - typing-extensions  # [py<38]
 
 test:
   imports:
