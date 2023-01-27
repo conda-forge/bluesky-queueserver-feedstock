@@ -24,11 +24,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.8
   run:
     - aioredis
     - bluesky
-    - bluesky-kafka  # [not win]
+    - bluesky-kafka
     - databroker
     - event-model
     - json-rpc
@@ -40,13 +40,12 @@ requirements:
     - openpyxl
     - ophyd
     - pydantic
-    - python
+    - python >=3.8
     - python-multipart
     - pyyaml
     - pyzmq
     - requests
     - scikit-image
-    - typing-extensions  # [py<38]
 
 test:
   imports:
