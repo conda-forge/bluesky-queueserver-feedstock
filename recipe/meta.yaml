@@ -29,7 +29,8 @@ requirements:
     - pip
     - python >=3.8
   run:
-    - redis[hiredis]
+    - redis
+    - hiredis
     - bluesky
     - bluesky-kafka
     - databroker
