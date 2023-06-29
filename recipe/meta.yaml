@@ -37,8 +37,8 @@ requirements:
     - ipykernel
     - json-rpc
     - jsonschema
-    - jupyter-client >=7.4.2
-    - jupyter-console
+    - jupyter_client >=7.4.2
+    - jupyter_console
     - matplotlib-base
     - msgpack-python >=1.0.0
     - msgpack-numpy
