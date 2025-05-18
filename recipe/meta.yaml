@@ -1,5 +1,5 @@
 {% set name = "bluesky-queueserver" %}
-{% set version = "0.0.21" %}
+{% set version = "0.0.22" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 2afd79e4ce6c43d3174e4432f15c65515642082f69188599a2e8e15bd8220c22
+  sha256: a148c05fe5cb0383c04ef09357df2b05848cb3a29a84bc0947dc1b2da468460b
 
 build:
   number: 1
@@ -32,15 +32,10 @@ requirements:
     - redis-py
     - hiredis
     - bluesky
-    - bluesky-kafka
-    - databroker
-    - event-model
     - ipykernel
-    - json-rpc
     - jsonschema
     - jupyter_client >=7.4.2
     - jupyter_console
-    - matplotlib-base
     - msgpack-python >=1.0.0
     - msgpack-numpy
     - numpydoc
@@ -52,7 +47,6 @@ requirements:
     - pyyaml
     - pyzmq
     - requests
-    - scikit-image
 
 test:
   imports:
