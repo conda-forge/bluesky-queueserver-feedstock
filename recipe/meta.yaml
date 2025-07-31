@@ -30,15 +30,14 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - redis-py
-    - hiredis
     - bluesky-base
+    - hiredis
     - ipykernel
     - jsonschema
     - jupyter_client >=7.4.2
     - jupyter_console
-    - msgpack-python >=1.0.0
     - msgpack-numpy
+    - msgpack-python >=1.0.0
     - numpydoc
     - openpyxl
     - ophyd
@@ -47,6 +46,7 @@ requirements:
     - python-multipart
     - pyyaml
     - pyzmq
+    - redis-py
     - requests
 
 test:
