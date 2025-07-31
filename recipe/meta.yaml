@@ -11,7 +11,7 @@ source:
   sha256: a148c05fe5cb0383c04ef09357df2b05848cb3a29a84bc0947dc1b2da468460b
 
 build:
-  number: 1
+  number: 2
   noarch: python
   entry_points:
     - qserver = bluesky_queueserver.manager.qserver_cli:qserver
@@ -28,16 +28,16 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
-    - redis-py
+    - bluesky-base
     - hiredis
-    - bluesky
     - ipykernel
     - jsonschema
     - jupyter_client >=7.4.2
     - jupyter_console
-    - msgpack-python >=1.0.0
     - msgpack-numpy
+    - msgpack-python >=1.0.0
     - numpydoc
     - openpyxl
     - ophyd
@@ -46,6 +46,7 @@ requirements:
     - python-multipart
     - pyyaml
     - pyzmq
+    - redis-py
     - requests
 
 test:
