@@ -1,5 +1,5 @@
 {% set name = "bluesky-queueserver" %}
-{% set version = "0.0.26" %}
+{% set version = "0.0.27" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: e98d0983ce974cc179ba7886442943143a1ae68c4be55738851d5777ca34b97b
+  sha256: 53260542ad059e7e9990c58f1d5af644402e3b9f0b8a51c4f73f6ccaf36d2336
 
 build:
   number: 0
